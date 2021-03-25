@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-  before_install:
+before_install:
     - docker pull node:8-onbuild
     - docker build -t probot-hello .
 
